@@ -1,0 +1,21 @@
+{
+  "name": "park-flow",
+  "version": "1.0.0",
+  "description": " A RESTful Parking Lot Management API built with Node.js, Express.js and JSON file storage, supporting parking space management, vehicle parking, unparking and fee calculation.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "morgan": "^1.12.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
