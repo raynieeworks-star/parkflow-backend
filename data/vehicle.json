@@ -14,7 +14,7 @@
     "numberPlate": "KLM234DF",
     "modelNumber": "2024",
     "status": "unparked",
-    "parkingNumber": 5,
+    "parkingNumber": 4,
     "fee": 0,
     "createdAt": "2026-11-12T21:09:50.007Z",
     "updatedAt": "2026-11-12T21:09:50.007Z"
@@ -34,7 +34,7 @@
     "numberPlate": "DEF234SC",
     "modelNumber": "2020",
     "status": "unparked",
-    "parkingNumber": 4,
+    "parkingNumber": 3,
     "fee": 0,
     "createdAt": "2026-11-12T21:09:50.007Z",
     "updatedAt": "2026-11-12T21:09:50.007Z"
