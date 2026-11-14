@@ -1,0 +1,42 @@
+[
+  {
+    "id": "17455233-e948-456e-9662-afbab779666d",
+    "numberPlate": "MNO234WE",
+    "modelNumber": "2025",
+    "status": "parked",
+    "parkingNumber": 1,
+    "fee": 0,
+    "createdAt": "2026-11-12T21:09:50.007Z",
+    "updatedAt": "2026-11-12T21:09:50.007Z"
+  },
+  {
+    "id": "56455233-e948-456e-9662-afbab779666d",
+    "numberPlate": "KLM234DF",
+    "modelNumber": "2024",
+    "status": "unparked",
+    "parkingNumber": 5,
+    "fee": 0,
+    "createdAt": "2026-11-12T21:09:50.007Z",
+    "updatedAt": "2026-11-12T21:09:50.007Z"
+  },
+  {
+    "id": "97455233-e948-456e-9662-afbab779666d",
+    "numberPlate": "GHI234GH",
+    "modelNumber": "2021",
+    "status": "parked",
+    "parkingNumber": 2,
+    "fee": 0,
+    "createdAt": "2026-11-12T21:09:50.007Z",
+    "updatedAt": "2026-11-12T21:09:50.007Z"
+  },
+  {
+    "id": "34455233-e948-456e-9662-afbab779666d",
+    "numberPlate": "DEF234SC",
+    "modelNumber": "2020",
+    "status": "unparked",
+    "parkingNumber": 4,
+    "fee": 0,
+    "createdAt": "2026-11-12T21:09:50.007Z",
+    "updatedAt": "2026-11-12T21:09:50.007Z"
+  }
+]
