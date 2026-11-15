@@ -12,8 +12,7 @@ const writeToFile = promisify(writeFile);
 
 export const readFileHandler = async function () {
   try {
-    const file = await readFromFile(filePath, "utf-8");
-    return JSON.parse(file);
+    return await readFromFile(filePath, "utf-8");
   } catch (error) {
     throw new AppError(500, `Could not read file: ${error.message}`);
   }

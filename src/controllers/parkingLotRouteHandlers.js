@@ -10,7 +10,7 @@ import { parkingFeeCalculator } from "../utils/feeCalculator.js";
 
 const getAllParkingSpace = async function (req, res, next) {
   try {
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
     const activeParkingLot = filterDataHandler(fileData, "status", "parked");
 
     res.status(200).json({
@@ -30,7 +30,7 @@ const getParkingSpaceByID = async function (req, res, next) {
       return next(new AppError(404, `Invalid ID ${id}`));
     }
 
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
     const dataMatched = searchDataHandler(fileData, "id", id);
 
     if (!dataMatched) {
@@ -58,7 +58,7 @@ const getParkingSpaceByID = async function (req, res, next) {
 const createNewParkingSpace = async function (req, res, next) {
   try {
     const time = new Date().toISOString();
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
 
     const id = genID();
 
@@ -98,7 +98,8 @@ const modifyExistingParkingSpace = async function (req, res, next) {
       return next(new AppError(400, `Status can only be unparked`));
     }
 
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
+
     const matchFound = searchDataHandler(fileData, "id", id);
 
     if (!matchFound) {
@@ -116,11 +117,7 @@ const modifyExistingParkingSpace = async function (req, res, next) {
       updatedAt: time,
     };
 
-    const matchIndex = findDataIndexHandler(
-      fileData,
-      matchFound.id,
-      modifiedData.id,
-    );
+    const matchIndex = findDataIndexHandler(fileData, id);
 
     fileData.splice(matchIndex, 1, modifiedData);
 
@@ -140,7 +137,8 @@ const deleteParkingSpaceByID = async function (req, res, next) {
       return next(new AppError(404, `Parking space with ID ${id}, not found`));
     }
 
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
+
     const matchFound = searchDataHandler(fileData, "id", id);
 
     if (matchFound.status === "parked") {
@@ -152,11 +150,7 @@ const deleteParkingSpaceByID = async function (req, res, next) {
       );
     }
 
-    const matchIndex = findDataIndexHandler(
-      fileData,
-      matchFound.id,
-      matchFound.id,
-    );
+    const matchIndex = findDataIndexHandler(fileData, id);
 
     fileData.splice(matchIndex, 1);
 
@@ -178,4 +172,3 @@ export const parkingSpaceHandler = {
   modifyExistingParkingSpace,
   deleteParkingSpaceByID,
 };
-
