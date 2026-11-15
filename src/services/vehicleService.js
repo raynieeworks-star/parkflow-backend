@@ -10,7 +10,7 @@ export const vehicleServiceHandler = async function (req, res, next) {
   try {
     const { numberPlate, parkingNumber } = req.body;
     //read data from data folder
-    const fileData = await readFileHandler();
+    const fileData = JSON.parse(await readFileHandler());
 
     //filter out vehicles with parked status
     const spacesInUse = filterDataHandler(fileData, "status", "parked");
