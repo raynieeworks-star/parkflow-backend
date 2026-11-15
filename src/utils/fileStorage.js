@@ -5,7 +5,7 @@ const dirName = import.meta.dirname;
 
 import { AppError } from "../utils/AppError.js";
 
-const filePath = path.join(dirName, "..", "..", "data", "vehicles.json");
+const filePath = path.join(dirName, "..", "..", "data", "vehicle.json");
 
 const readFromFile = promisify(readFile);
 const writeToFile = promisify(writeFile);
