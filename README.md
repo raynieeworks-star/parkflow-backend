@@ -38,3 +38,17 @@ NODE_ENV=production (It hides error stack traces from the API responses. It leav
 - Unique ID, `createdAt` and `updatedAt` on every record.
 - A vehicle that is still parked cannot be deleted 
 // These are the features of our production.
+
+## Team Members
+Othieno Innocent
+Otiga Enemona Emmanuel
+RAY-ELEWA SWEENEY CHIGWEYARUM
+Samuel Olawale Niyi
+Sanni Rihanat Oluwatumileyin
+Sesi Kuton
+Shalom Omini Vincent
+Sumaila Aliyu
+Testimony Adejobi
+Tochukwu Eze Paul
+Umwali Olga
+Uwakwe Ugochukwu
