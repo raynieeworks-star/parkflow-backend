@@ -225,7 +225,7 @@ To test the fee for several hours, open `data/vehicles.json`, change the `create
 | Name                         | Role                    | What they built |
 |------------------------------|-------------------------|-----------------|
 | Sumaila Aliyu                | Project/Repository setup and file storage | Folder structure `fileStorage.js`, data file: `vehicle.json` |
-|Ray Elewa Sweeny Chigweyarum  | Routes                  | `vehicleRoutes.js`, `app.js` |
+|Ray-Elewa Sweeney Chigweyarum  | Routes                  | `vehicleRoutes.js`, `app.js` |
 | Samuel Niyi                  | Controllers             | `parkingLotRouteHandlers.js` |
 | Ugochukwu Uwakwe             | Helper functions        | `reuseableFunctions.js` |
 | Vincent Shalom               | Validation, services, error handling and fee | `validator.js`, `vehicleService.js`, `AppError.js`, `index.js`, `feeCalculator.js` |
