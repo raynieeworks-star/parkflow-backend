@@ -33,7 +33,7 @@ NODE_ENV=production (It hides error stack traces from the API responses. It leav
 ## Features
 - Park a vehicle into a numbered parking space
 - Unpark a vehicle and calculate the parking fee (bonus feature)
-- Prevents the same vehicle from being parked twice, and a space from beung used twice.
+- Prevents the same vehicle from being parked twice, and a space from being used twice.
 - Validates all input and returns clear error messages.
 - Unique ID, `createdAt` and `updatedAt` on every record.
 - A vehicle that is still parked cannot be deleted 
